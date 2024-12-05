@@ -1,9 +1,10 @@
-# soma.py com verificação
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+# soma.py
+def soma(a, b, c=0):
+    return a + b + c
 
-if num1 < 0 or num2 < 0:
-    print("Pelo menos um número é negativo.")
-else:
-    soma = num1 + num2
-    print("A soma dos números é:", soma)
+def media(a, b, c=0):
+    return soma(a, b, c) / 3  # Calcula a média
+
+# Teste das funções
+print(soma(5, 3, 2))  # Resultado da soma
+print(media(5, 3, 2))  # Resultado da média
